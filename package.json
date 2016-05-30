@@ -1,0 +1,11 @@
+{
+  "name": "orders",
+  "version": "0.0.1",
+  "dependencies": {
+    "body-parser": "latest",
+    "express": "~4.2.0",
+    "mongoose": "latest",
+    "node-mongoose-validator": "^1.2.0",
+    "validate.js": "^0.8.0"
+  }
+}

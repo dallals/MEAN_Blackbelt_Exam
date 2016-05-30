@@ -1,0 +1,41 @@
+<div align="right" style="margin-top: 10px">
+	 <a href="#/dashboard" class="btn-xs btn-info">Return to Dashboard</a>
+</div>
+{{user.name}}
+
+<div class="container">
+  <h2>Vote on the Poll</h2>
+  <h3>{{poll.question}}</h3>
+              
+  <table class="table table-hover">
+    <thead>
+      <tr>
+        <th>Option</th>
+        <th>Current vote count</th>
+        <th>Action</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>{{poll.option1}}</td>
+        <td>{{poll.vote1}}</td>
+        <td><button type="submit" value="Add Question" ng-click ="vote1(poll)" class="btn-xs btn-primary">vote</button></td>
+      </tr>
+      <tr>
+        <td>{{poll.option2}}</td>
+        <td>{{poll.vote2}}</td>
+        <td><button type="submit" value="Add Question" ng-click ="vote2(poll)" class="btn-xs btn-primary">vote</button></td>
+      </tr>
+      <tr>
+        <td>{{poll.option3}}</td>
+        <td>{{poll.vote3}}</td>
+        <td><button type="submit" value="Add Question" ng-click ="vote3(poll)" class="btn-xs btn-primary">vote</button></td>
+      </tr>
+      <tr>
+        <td>{{poll.option4}}</td>
+        <td>{{poll.vote4}}</td>
+        <td><button type="submit" value="Add Question" ng-click ="vote4(poll)" class="btn-xs btn-primary">vote</button></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
