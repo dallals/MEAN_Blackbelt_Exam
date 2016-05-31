@@ -60,11 +60,7 @@ Myapp.controller("pollController", function($scope, $routeParams, userFactory, $
 	}
 
 })
-	// pollFactory.getOnePoll($routeParams.id, function(data){
-	// 	console.log(data, "test test")
-	// 		$scope.poll = data
-	// 		// $location.path('/poll/' + poll._id)
-	// 	})
+
 
 Myapp.controller("showPollController", function($scope, $routeParams, userFactory, $location, pollFactory){
 //will display single poll
@@ -73,12 +69,6 @@ Myapp.controller("showPollController", function($scope, $routeParams, userFactor
 		$scope.poll = data;
 	})
 
-	
-	// pollFactory.getOnePoll($routeParams.id, function(data){
-	// 	console.log(data, "test test")
-	// 		$scope.poll = data
-	// 		// $location.path('/poll/' + poll._id)
-	// 	})
 
 	$scope.vote1 = function(poll){
 		console.log("getting to contrioller")
@@ -105,11 +95,6 @@ Myapp.controller("showPollController", function($scope, $routeParams, userFactor
 			$scope.user = data;
 	})
 
-	// $scope.getPoll = function(poll){
-	// 	pollFactory.getOnePoll(poll, function(data){
-	// 		$scope.poll = data
-	// 	})
-	// }
 
 	
 

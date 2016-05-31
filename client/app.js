@@ -20,11 +20,6 @@ var Myapp = angular.module('Myapp', ['ngRoute']);
 				controller: 'showPollController'
 			})
 
-			// .when('/new', {
-			// 	templateUrl: 'partials/new.html',
-			// 	controller: 'appointmentController'			
-			// })
-
 			.otherwise({
 				redirectTo: "/"
 			})
